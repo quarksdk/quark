@@ -1,9 +1,12 @@
+!.env.example
 *.sublime-project
 *.sublime-workspace
 .bash_history
 .bashrc
 .cache/
 .DS_Store
+.env
+.env.*
 .gitconfig
 .idea
 .profile
