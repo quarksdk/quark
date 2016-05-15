@@ -1,4 +1,3 @@
-!.env.example
 *.sublime-project
 *.sublime-workspace
 .bash_history
@@ -19,9 +18,9 @@
 /.ssh/
 /bower_components/
 /node_modules/
-/test/e2e/reports
-/test/unit/coverage
+/test/coverage
 npm-debug.log
 packages.json
 selenium-debug.log
 Thumbs.db
+!.env.example
