@@ -1,0 +1,4 @@
+- Routing: [https://github.com/visionmedia/page.js/]
+- Templating: [http://twitter.github.io/hogan.js/]
+- Service Container: [https://www.npmjs.com/package/service-container]
+- MVC Concept: [http://timstermatic.github.io/blog/2013/08/17/a-simple-mvc-framework-with-node-and-express/]
