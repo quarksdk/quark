@@ -18,8 +18,6 @@
 /.nvm/
 /.ssh/
 /bower_components/
-/build/
-/dist/
 /node_modules/
 /test/e2e/reports
 /test/unit/coverage
