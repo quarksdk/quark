@@ -3,6 +3,8 @@
 ## Boilerplates
 - https://github.com/bradstewart/electron-boilerplate-vue
 - https://github.com/rodzzlessa24/vue-electron
+- https://github.com/frankhale/electron-with-express
+    - Express does a lot of what we need.  Might be worth a look
 
 ## Routing
 - Vue Router: https://github.com/vuejs/vue-router
@@ -23,6 +25,7 @@
 
 ## Support
 - Service Container: https://www.npmjs.com/package/service-container
+- Service Container: http://noder.io/guide/quickstart.html
 - LoDash: https://lodash.com
 - Underscore: http://underscorejs.org
 - Vue Resource (Ajax): https://github.com/vuejs/vue-resource
