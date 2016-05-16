@@ -5,7 +5,7 @@
     - Daniel: Nah
 - Service Container: [https://www.npmjs.com/package/service-container]
 - MVC Concept: [http://timstermatic.github.io/blog/2013/08/17/a-simple-mvc-framework-with-node-and-express/]
-- Land in JS (would require some reworking): [https://github.com/rmariuzzo/Laravel-JS-Localization]
+- Lang in JS (would require some reworking): [https://github.com/rmariuzzo/Laravel-JS-Localization]
 
 # Notes
 - Daniel: Lets try to find a laravel.js or something that that uses laravel concepts and see what we can port.
