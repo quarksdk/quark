@@ -44,4 +44,5 @@
 # Notes
 - Daniel: Lets try to find a laravel.js or something that that uses laravel concepts and see what we can port.
   - Travis: There seems to be no laravel port to JS
-- May also not need any of these support libs: https://www.reindex.io/blog/you-might-not-need-underscore/
+- May also not need any of these support libs: https://www.reindex.io/blog/you-might-not-need-underscore
+- https://blog.madewithlove.be/post/webpack-your-bags/

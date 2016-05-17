@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <img class="logo" src="./assets/logo.png">
+    <img class="logo" src="../../resources/images/logo.png">
     <hello></hello>
     <p>
-      Welcome to your Electron app!
+      Welcome to your Quark app!
     </p>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Hello from './Components/Hello'
 
 export default {
   components: {
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../node_modules/bootstrap/scss/bootstrap';
+@import '../../node_modules/bootstrap/scss/bootstrap';
 
 html {
   height: 100%;

@@ -1,16 +1,12 @@
-// see http://vuejs-templates.github.io/webpack for documentation.
 var path = require('path')
-
-module.exports = {
-  build: {
-    index: path.resolve(__dirname, 'dist/index.html'),
-    assetsRoot: path.resolve(__dirname, 'dist'),
-    assetsSubDirectory: 'static',
-    assetsPublicPath: path.resolve(__dirname, 'dist'),
-    productionSourceMap: true
-  },
-  dev: {
-    port: 8080,
-    proxyTable: {}
+var webpack = require("webpack");
+var server = require("webpack-dev-server");
+var config = require('./webpack.config.js');
+var compiler = webpack(config);
+new server(compiler, config.devServer).listen(8080, function (err) {
+  if (err) {
+    console.log(err)
+  } else {
+    console.log('Listening at http://localhost:' + 8080 + '\n')
   }
-}
+})
