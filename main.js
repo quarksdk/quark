@@ -43,8 +43,8 @@ Electron.on('ready', function () {
     width: Math.ceil(size.width / 2),
     height: Math.ceil(size.height / 2)
   })
-  //Quark.loadURL(path.join('file://', __dirname, 'build/index.html'))
-  Quark.loadUrl('http://localhost:8080')
+  Quark.loadURL(path.join('file://', __dirname, 'build/index.html'))
+  //Quark.loadURL('http://localhost:8080')
 
   ipcMain.on('quit', function () {
     Electron.quit()

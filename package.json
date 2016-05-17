@@ -6,6 +6,7 @@
   "main": "./main.js",
   "scripts": {
     "dev": "node build.js",
+    "watch": "./node_modules/.bin/webpack --watch",
     "build": "rm -rf build/*; ./node_modules/.bin/webpack",
     "unit": "karma start tests/karma.conf.js --single-run",
     "test": "npm run unit",

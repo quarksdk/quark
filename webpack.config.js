@@ -29,7 +29,7 @@ module.exports = {
   output: {
     path: assetsPath,
     publicPath: 'assets/',
-    filename: 'js/[name]-[hash:7].js',
+    filename: 'js/[name].js',
     libraryTarget: 'commonjs2',
   },
   bail: true,
@@ -52,7 +52,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'eslint',
-        include: vendorPath,
+        include: [ appPath, scriptsPath ]
       }
     ],
     loaders: [
@@ -89,10 +89,10 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url',
-        include: [ imagesPath, fontsPath ],
+        include: [ imagesPath ],
         query: {
           limit: 10000,
-          name: 'img/[name]-[hash:7].[ext]',
+          name: 'img/[name].[ext]', // -[hash:7]
         }
       },
       {
@@ -101,7 +101,7 @@ module.exports = {
         include: [ fontsPath ],
         query: {
           limit: 10000,
-          name: 'fonts/[name]-[hash:7].[ext]',
+          name: 'fonts/[name].[ext]',
         }
       }
     ]
@@ -126,7 +126,7 @@ module.exports = {
     formatter: ESLintFriendlyFormatter
   },
   plugins: [
-    new ExtractTextPlugin('css/[name]-[hash:7].css'),
+    new ExtractTextPlugin('css/[name].css'),
     // new webpack.EnvironmentPlugin([
     //   'NODE_ENV'
     // ]),
