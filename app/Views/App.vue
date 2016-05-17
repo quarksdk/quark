@@ -9,19 +9,18 @@
 </template>
 
 <script>
+// import path from 'path'
 import Hello from './Components/Hello'
 import CommandManager from '../Console/CommandManager'
-import ValetShare from '../Console/Commands/ValetShare'
+import OpenFinder from '../Console/Commands/OpenFinder'
 
 export default {
   components: {
     Hello
   },
 
-  ready()
-  {
-    let valetShare = new ValetShare('/Users/stygian/Code/Personal/dasher/')
-    CommandManager.make(valetShare).background().execute()
+  ready() {
+    CommandManager.make(new OpenFinder('~/')).background().execute()
   }
 }
 </script>

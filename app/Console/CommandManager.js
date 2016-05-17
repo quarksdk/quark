@@ -77,17 +77,16 @@ class CommandManager {
   {
     let backgroundProcess = new Process()
 
-    backgroundProcess.loadURL('http://google.com')
+    backgroundProcess.loadURL('resources/templates/foreground.html')
 
-    backgroundProcess.webContents.on('dom-ready', function () {
-      backgroundProcess.webContents.executeJavaScript(function ()
-      {
-        this.make(this.command).foregroundProcessCommand(callback)
-      }, false, function (error) {
-        if (error) {
-          backgroundProcess.close()
-        }
-      })
+    backgroundProcess.webContents.executeJavaScript(function ()
+    {
+      alert('hello')
+      this.make(this.command).foregroundProcessCommand(callback)
+    }, false, function (error) {
+      if (error) {
+        backgroundProcess.close()
+      }
     })
 
     return backgroundProcess

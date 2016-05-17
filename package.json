@@ -10,8 +10,8 @@
     "build": "rm -rf build/*; ./node_modules/.bin/webpack",
     "unit": "karma start tests/karma.conf.js --single-run",
     "test": "npm run unit",
-    "start": "electron .",
-    "distribute": "electron-packager ./ Unity --platform=darwin --arch=x64 --out ./dist --version 0.37.8 --overwrite --icon=./build/img/app-icon.icns"
+    "start": "./node_modules/.bin/electron .",
+    "distribute": "./node_modules/.bin/electron-packager ./ Unity --platform=darwin --arch=x64 --out ./dist --version 0.37.8 --overwrite --icon=./build/img/app-icon.icns"
   },
   "dependencies": {
     "bootstrap": "git+https://github.com/twbs/bootstrap.git#v4-dev",
@@ -35,7 +35,7 @@
     "babel-runtime": "^6.6.1",
     "css-loader": "^0.23.1",
     "electron-packager": "^7.0.1",
-    "electron-prebuilt": "^0.37.8",
+    "electron-prebuilt": "^1.1.0",
     "eslint": "^2.10.2",
     "eslint-friendly-formatter": "^2.0.4",
     "eslint-loader": "^1.3.0",
