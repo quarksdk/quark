@@ -6,7 +6,8 @@
 
 <script>
 export default {
-  data () {
+  data()
+  {
     return {
       msg: 'Hello Quark!'
     }

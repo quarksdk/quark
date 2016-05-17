@@ -10,16 +10,24 @@
 
 <script>
 import Hello from './Components/Hello'
+import CommandManager from '../Console/CommandManager'
+import ValetShare from '../Console/Commands/ValetShare'
 
 export default {
   components: {
     Hello
+  },
+
+  ready()
+  {
+    let valetShare = new ValetShare('/Users/stygian/Code/Personal/dasher/')
+    CommandManager.make(valetShare).background().execute()
   }
 }
 </script>
 
 <style lang="scss">
-@import '../../node_modules/bootstrap/scss/bootstrap';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 html {
   height: 100%;

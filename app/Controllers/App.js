@@ -7,7 +7,8 @@ new Vue({
   components: { App }
 })
 
-let updateOnlineStatus = function () {
+let updateOnlineStatus = function()
+{
   console.log(navigator.onLine ? 'online' : 'offline')
   ipcRenderer.send('online-status-changed', navigator.onLine ? 'online' : 'offline')
 }

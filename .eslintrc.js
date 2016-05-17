@@ -13,6 +13,13 @@ module.exports = {
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     // allow new and ignore side effects
-    'no-new': 0
+    'no-new': 0,
+    // allow curly braces on new line for methods
+    'brace-style': 0,
+    // require spaces before function parenthesis
+    'space-before-function-paren': [2, {'anonymous': 'ignore', 'named': 'never'}],
+    // allow aligned values
+    'no-multi-spaces': 0,
+    'key-spacing': 0,
   }
 }
