@@ -17,7 +17,9 @@
   - Daniel: only if we end up needing pre-built templates, could be part of build process
 - Lang in JS: https://github.com/rmariuzzo/Laravel-JS-Localization
   - Travis: would require some reworking
+- Vue-Lang: https://github.com/kazupon/vue-i18n
 - Translation: https://github.com/kazupon/vue-i18n
+- EJS: https://github.com/tj/ejs
 
 ## Architecture
 - MVC Concept: http://timstermatic.github.io/blog/2013/08/17/a-simple-mvc-framework-with-node-and-express
