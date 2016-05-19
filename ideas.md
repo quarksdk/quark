@@ -34,6 +34,13 @@
 - Vue Socket.io: https://github.com/MetinSeylan/Vue-Socket.io
 - Vue Form Validator: https://github.com/vuejs/vue-validator
 
+## Electron modules
+- Notifications: https://github.com/blainesch/electron-notifications
+- Toasts: https://www.npmjs.com/package/electron-toaster
+- Background processes: https://github.com/smith-kyle/electron-process
+- Windows state saving: https://github.com/mawie81/electron-window-state
+- User Settings: https://github.com/jviotti/electron-json-storage
+
 # Learning JS
 - https://babeljs.io/docs/learn-es2015/
 - https://leanpub.com/understandinges6
