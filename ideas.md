@@ -41,6 +41,7 @@
 
 # UI/UX and Design
 - http://primercss.io
+- http://codeguide.co
 
 # Naming
 - Gluon: the build toolchain package
