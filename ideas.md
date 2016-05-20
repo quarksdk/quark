@@ -22,6 +22,8 @@
 ## Architecture
 - MVC Concept: http://timstermatic.github.io/blog/2013/08/17/a-simple-mvc-framework-with-node-and-express
 - Building Native Apps w/ React: http://www.juxt.com/pov/thoughts/building-native-desktop-apps-with-web-tech
+- Black Screen: https://github.com/shockone/black-screen
+  - Could learn a thing or two from their source
 
 ## Support
 - Service Container: https://www.npmjs.com/package/service-container
