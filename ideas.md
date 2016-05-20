@@ -33,6 +33,7 @@
 - Vue Resource (Ajax): https://github.com/vuejs/vue-resource
 - Vue Socket.io: https://github.com/MetinSeylan/Vue-Socket.io
 - Vue Form Validator: https://github.com/vuejs/vue-validator
+- Immutable Collections: https://github.com/facebook/immutable-js
 
 # Learning JS
 - https://babeljs.io/docs/learn-es2015/
