@@ -22,6 +22,8 @@
 ## Architecture
 - MVC Concept: http://timstermatic.github.io/blog/2013/08/17/a-simple-mvc-framework-with-node-and-express
 - Building Native Apps w/ React: http://www.juxt.com/pov/thoughts/building-native-desktop-apps-with-web-tech
+- Black Screen: https://github.com/shockone/black-screen
+  - Could learn a thing or two from their source
 
 ## Support
 - Service Container: https://www.npmjs.com/package/service-container
@@ -31,10 +33,16 @@
 - Vue Resource (Ajax): https://github.com/vuejs/vue-resource
 - Vue Socket.io: https://github.com/MetinSeylan/Vue-Socket.io
 - Vue Form Validator: https://github.com/vuejs/vue-validator
+- Immutable Collections: https://github.com/facebook/immutable-js
 
 # Learning JS
 - https://babeljs.io/docs/learn-es2015/
 - https://leanpub.com/understandinges6
+
+# UI/UX and Design
+- http://primercss.io
+- http://codeguide.co
+- http://tachyons.io/docs/themes/skins
 
 # Naming
 - Gluon: the build toolchain package
