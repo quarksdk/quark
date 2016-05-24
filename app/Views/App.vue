@@ -3,24 +3,17 @@
     <img class="logo" src="../../resources/images/logo.png">
     <hello></hello>
     <p>
-      Welcome to your Quark app!
+      Welcome to your Electron app!
     </p>
   </div>
 </template>
 
 <script>
-// import path from 'path'
 import Hello from './Components/Hello'
-import CommandManager from '../Console/CommandManager'
-import OpenFinder from '../Console/Commands/OpenFinder'
 
 export default {
   components: {
     Hello
-  },
-
-  ready() {
-    CommandManager.make(new OpenFinder('~/')).background().execute()
   }
 }
 </script>

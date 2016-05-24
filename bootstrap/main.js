@@ -6,12 +6,14 @@ const ipcMain = require('electron').ipcMain
 
 let Quark = null
 let TrayIcon = null
+// let iconTemplate = require('../resources/images/tray-iconTemplate.png')
+// let iconAlt = require('../resources/images/tray-icon-alt.png')
 
 Electron.on('ready', function () {
   if (process.platform === 'darwin') {
-    TrayIcon = new Tray(path.join(__dirname, 'resources/images/tray-iconTemplate.png'))
+    TrayIcon = new Tray(path.resolve('resources/images/tray-iconTemplate.png'))
   } else {
-    TrayIcon = new Tray(path.join(__dirname, 'resources/images/tray-icon-alt.png'))
+    TrayIcon = new Tray(path.resolve('resources/images/tray-icon-alt.png'))
   }
   TrayIcon.setToolTip('Quark')
   TrayIcon.setContextMenu(
@@ -43,8 +45,8 @@ Electron.on('ready', function () {
     width: Math.ceil(size.width / 2),
     height: Math.ceil(size.height / 2)
   })
-  Quark.loadURL(path.join('file://', __dirname, 'build/index.html'))
-  //Quark.loadURL('http://localhost:8080')
+  // Quark.loadURL(path.join('file://', path.resolve('build/index.html')))
+  Quark.loadURL('http://localhost:8080')
 
   ipcMain.on('quit', function () {
     Electron.quit()

@@ -3,8 +3,10 @@ var webpack = require('webpack');
 var ESLintFriendlyFormatter = require('eslint-friendly-formatter');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ManifestPlugin = require('webpack-manifest-plugin');
 
 var basePath        = path.resolve(__dirname);
+var bootstrapPath   = path.join(basePath, 'bootstrap');
 var vendorPath      = path.join(basePath, 'node_modules');
 var appPath         = path.join(basePath, 'app');
 var configPath      = path.join(basePath, 'config');
@@ -22,8 +24,13 @@ var langPath        = path.join(resourcesPath, 'langs');
 
 module.exports = {
   entry:  {
+    // main: [
+    //   path.join(bootstrapPath, 'main.js'),
+    // ],
     app: [
-      path.join(controllersPath, 'App'),
+      path.join(controllersPath, 'App.js'),
+      'webpack-dev-server/client?http://localhost:8080/',
+      'webpack/hot/dev-server',
     ],
   },
   output: {
@@ -36,11 +43,11 @@ module.exports = {
   target: 'electron-renderer',
   resolve: {
     root: [ './', appPath, configPath, resourcesPath, basePath, vendorPath ],
-    extensions: ['', '.js', '.json', '.vue', '.scss', '.less', '.css', '.html'],
+    extensions: ['', '.js', '.json', '.vue', '.scss', '.less', '.css', '.html', '.png', '.jpg', '.jpeg', '.gif'],
   },
   resolveLoader: {
     root: [ vendorPath ],
-    extensions: ['', '.js', '.json', '.vue', '.scss', '.less', '.css', '.html'],
+    extensions: ['', '.js', '.json'],
   },
   module: {
     preLoaders: [
@@ -52,7 +59,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'eslint',
-        include: [ appPath, scriptsPath ]
+        include: [ appPath, scriptsPath, bootstrapPath ]
       }
     ],
     loaders: [
@@ -107,7 +114,7 @@ module.exports = {
     ]
   },
   babel: {
-    presets: ['es2015', 'stage-2'],
+    presets: ['es2015', 'stage-0'],
     plugins: ['transform-runtime'],
     comments: false
   },
@@ -139,12 +146,13 @@ module.exports = {
     //     warnings: false
     //   }
     // }),
-    // new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.OccurenceOrderPlugin(),
     new HtmlWebpackPlugin({
       filename: path.join(buildPath, 'index.html'),
       template: path.join(templatesPath, 'app.html'),
       inject: true
     }),
+    new ManifestPlugin(),
   ],
   devtool: '#source-map',
   devServer: {
